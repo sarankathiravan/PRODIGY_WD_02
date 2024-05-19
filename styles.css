@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #720606, #000000);
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    height: 70px;
+    margin-right: 25px;
+}
+
+.logo-text {
+    font-family: 'Academy',sans-serif;
+    font-size: 3rem;
+    font-weight: 10;
+    text-transform: lowercase;
+}
+
+.stopwatch {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    font-family: 'skyfont', sans-serif;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.controls button {
+    font-family: 'cinzel', sans-serif;
+    margin: 5px;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #000000, #000000);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.controls button:hover {
+    background: linear-gradient(135deg, #000000, #620303);
+    transform: scale(1.05);
+}
+
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.laps ul {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.laps li {
+    font-family: 'sf pro display', sans-serif;
+    margin: 5px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    animation: slideIn 0.5s ease-out;
+}
+
+.laps li:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
